@@ -71,7 +71,7 @@ var _ = Describe("Bank", func() {
 				Expect(err.Error()).To(Equal("withdrawal amount must be greater than zero"))
 			})
 
-			It("should return an error for withdraw greater than the current balance", func() {
+			It("should return an error for withdrawal amount greater than the current balance", func() {
 				err := account.Withdraw(350.0)
 				Expect(err).To(HaveOccurred())
 				Expect(err.Error()).To(Equal("insufficient funds"))

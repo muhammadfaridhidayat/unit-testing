@@ -17,7 +17,7 @@ func (a *Account) Deposit(amount float64) error {
 	return nil
 }
 
-// Withdraw
+// Withdrawl
 func (a *Account) Withdraw(amount float64) error {
 	if amount <= 0 {
 		return errors.New("withdrawal amount must be greater than zero")
