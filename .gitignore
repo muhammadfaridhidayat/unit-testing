@@ -1,0 +1,26 @@
+# Ignore Go binary files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Ignore build output directory (e.g., bin or build)
+bin/
+build/
+
+# Ignore Go modules
+/vendor/
+
+# Ignore the Go workspace
+/go/
+
+# Ignore test coverage files
+.coverage
+
+# Ignore IDE-specific files (e.g., VS Code, GoLand)
+.idea/
+.vscode/
+
+# Ignore Go's mod cache
+/pkg/
